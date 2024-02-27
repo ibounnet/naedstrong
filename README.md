@@ -1,13 +1,14 @@
-#im in vsdode
-sexy
-higasgsda
+ ** OOP Project
+ https://github.com/aaaa/oop-project
 
-net so sexy
+ README.md
+ - application title
+ - author
+    * id :
+    * namee : first last
+- technology : [pygame/stramlit]
+- appication description
 
-
-she not your
-
-dfdf
-sdfsadf
-
-asdfasf
+* presentation : [slide/canva/etc..] link [pulic/ubu]
+* video: link [public/ubu]
+ xoxoxo
