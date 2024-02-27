@@ -16,3 +16,5 @@
 * video: link [public/ubu]
 * 
  xoxoxo
+
+https://docs.google.com/spreadsheets/d/1tAsrGpm43euiGUmHK75WJt3iPMDJIhBhCQmIUVt4r00/edit#gid=0
