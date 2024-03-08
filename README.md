@@ -18,3 +18,12 @@
  xoxoxo
 
 https://docs.google.com/spreadsheets/d/1tAsrGpm43euiGUmHK75WJt3iPMDJIhBhCQmIUVt4r00/edit#gid=0
+
+
+คำสั่งเอาขึ้น github
+-- git init
+-- git add REAMDE.md
+-- git commit
+-- git brach main 
+-- git remote add origin .. เว็บเรา 
+-- git push -u origin main
