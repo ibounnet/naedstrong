@@ -1,6 +1,23 @@
 import streamlit as st
+import base64
 from bmi import BMI_Calculator
 from bmr import BMR_Calculator
+
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('pro1.jpg')    
 
 # Create instances of BMI_Calculator and BMR_Calculator
 bmi_app = BMI_Calculator()
@@ -27,32 +44,30 @@ if page == 1:
 
     st.write("Let's calculate your BMI and BMR! 🧮")
 
-    # If BMI button is clicked, set the page to 2 (BMI calculator)
+
+    # create link page
     if st.button('BMI CALCULATE') :
         page = 2
     
 
-    # If BMR button is clicked, set the page to 3 (BMR calculator)
     elif st.button('BMR CACULATE') :
         page = 3
        
 
 elif page == 2:
-    st.empty()  # Clear the page
-    bmi_app.render_main_page()  # Render the BMI calculator
+    st.empty()  
+    bmi_app.render_main_page()  
 
     if st.button('HOME 🏠'):
         page = 1
 
 elif page == 3:
-    st.empty()  # Clear the page
-    bmr_app.render_bmr_page()  # Render the BMR calculator
+    st.empty()  
+    bmr_app.render_bmr_page()  
 
     if st.button('HOME 🏠'):
 
         page = 1
        
 
-
-# Save the current page to the session state
 st.session_state['page'] = page
