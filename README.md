@@ -2,9 +2,10 @@
  ---
  >> application title
 * เว็บไซต์การคำนวณ BMI และ BMR
+  
  >> author
-    * id : 66114540643
-    * name : นางสาววรางคณา ใจเพียร
+  * id : 66114540643
+  * name : นางสาววรางคณา ใจเพียร
 
 - technology : [pygame/stramlit]
   
